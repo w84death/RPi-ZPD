@@ -1,9 +1,15 @@
-from time import sleep
+from time import sleep, time
+from picamera import PiCamera
 
 class Photo():
     def __init__(self, dot, kbd):
         self.d = dot
         self.k = kbd
+        self.c = PiCamera()
+
+        self.c.rotation = 90
+        #self.c.hflip = True
+        #self.c.vflip = True
 
     def enter(self):
         while True:
@@ -16,8 +22,9 @@ class Photo():
         return False
 
     def take(self):
-        self.d.write('...')       
-        sleep(1)
+        self.d.write('...')
+        image_id = int(time())
+        self.c.capture('{id}.jpg'.format(id=str(image_id)))
         self.d.write('SNAP!')
-        sleep(1)
+        sleep(0.5)
         return True
