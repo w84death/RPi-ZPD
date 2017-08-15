@@ -3,8 +3,7 @@
 
 The **RPi-ZPD** is a very small device to make photos and 2K timelapse videos.
 
-![Timelapse in progress..](http://i.imgur.com/uEEbf9b.gif)
-
+![Timelapse in progress..](http://i.imgur.com/ZEDQnhi.gif)
 
 ## History
 
