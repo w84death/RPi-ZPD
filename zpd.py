@@ -6,19 +6,20 @@
 
 VERSION = 'pre-alpha 0.1'
 
-import time 
-import readchar
-
 from dot import Dot  
+from kbd import Kbd
 
 if __name__ == '__main__':
     d = Dot()
+    k = Kbd()
 
-    d.write('RPi-ZPD')
+    d.logo()
 
     while True:
-        key = readchar.readkey()
-        print(key)
-        if key == 'ESC':
+        k.read()
+        if k.was('EXIT'):
             break
-        #d.loop()
+        elif k.was('UP'):
+            d.write('UP')
+        elif k.was('DOWN'):
+            d.write('DOWN')
