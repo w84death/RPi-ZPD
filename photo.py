@@ -25,7 +25,7 @@ class Photo():
     def take(self):
         self.d.write('...')
         image_id = int(time())
-        self.c.capture('{id}.jpg'.format(id=str(image_id)))
+        self.c.capture('snaps/{id}.jpg'.format(id=str(image_id)))
         self.d.write('SNAP!')
         sleep(0.5)
         return True
