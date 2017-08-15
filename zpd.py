@@ -16,5 +16,6 @@ if __name__ == '__main__':
 
     d.write('RPi-ZPD')
 
-    while readchar.readkey() != 'ESC':
-        d.loop()
+    while True:
+        key = readchar.readkey()
+        #d.loop()
