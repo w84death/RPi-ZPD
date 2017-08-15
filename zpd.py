@@ -21,7 +21,7 @@ if __name__ == '__main__':
     m = Menu()
     p = Photo(d, k)
     i = Info(d, k)
-    t = Timelapse(d, k)
+    t = Timelapse(d, k, p)
     q = QuitProgram(d, k)
 
     # LOGO INTRO

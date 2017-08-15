@@ -22,10 +22,13 @@ class Photo():
                 break
         return False
 
+    def make_photo(self, path):
+        self.c.capture(path)
+
     def take(self):
         self.d.write('...')
         image_id = int(time())
-        self.c.capture('snaps/{id}.jpg'.format(id=str(image_id)))
+        self.make_photo('snaps/{id}.jpg'.format(id=str(image_id)))
         self.d.write('SNAP!')
         sleep(0.5)
         return True
