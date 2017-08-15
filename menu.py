@@ -4,7 +4,8 @@ class Menu():
             'PHOTO',
             'BATCH',
             'CONFIG',
-            'INFO'
+            'INFO',
+            'QUIT'
         ]
         self.active_item = 0
 

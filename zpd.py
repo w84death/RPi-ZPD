@@ -13,6 +13,7 @@ from menu import Menu
 from photo import Photo
 from timelapse import Timelapse
 from info import Info
+from quitprogram import QuitProgram
 
 if __name__ == '__main__':
     d = Dot()
@@ -21,6 +22,7 @@ if __name__ == '__main__':
     p = Photo(d, k)
     i = Info(d, k)
     t = Timelapse(d, k)
+    q = QuitProgram(d, k)
 
     # LOGO INTRO
     d.logo()
@@ -32,9 +34,7 @@ if __name__ == '__main__':
 
         k.read()
         if k.was('EXIT'):
-            d.write('BYE :)')
-            sleep(1)
-            break
+            q.enter()
         elif k.was('UP'):
             m.set_menu_up()
         elif k.was('DOWN'):
@@ -46,6 +46,8 @@ if __name__ == '__main__':
                 t.enter()
             elif m.is_menu('INFO'):
                 i.enter()
+            elif m.is_menu('QUIT'):
+                q.enter()
             else:
                 d.write('N/A')
                 sleep(1)

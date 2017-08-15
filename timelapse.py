@@ -27,10 +27,7 @@ class Timelapse():
 
     def run(self):
         while True:
-            try:
-                self.take()
-                self.d.write('SLEEP')
-                sleep(self.sleep_time)
-            except KeyboardInterrupt:
-                return False
+            self.take()
+            self.d.write('SLEEP')
+            sleep(self.sleep_time)
             
