@@ -3,6 +3,9 @@
 
 The **RPi-ZPD** is a very small device to make photos and 2K timelapse videos.
 
+    ![ZPD](https://i.imgur.com/lGcWSAa.jpg)
+
+
 ## History
 
 It is a third iteration of this idea. To make a small, portable, Pi-powered camera. Instead of viewfinder I just need a simple screen to change settings and see progress of making photo(s).
@@ -10,6 +13,11 @@ It is a third iteration of this idea. To make a small, portable, Pi-powered came
 I needed just two modes: **single** photo and **timelapse** interval shooting.
 
 I wrote a little python program to handle all of this.
+
+
+
+    ![ZPD](https://i.imgur.com/NcNSaUp.jpg)
+
 
 ## Hardware
 
