@@ -15,11 +15,9 @@ class Kbd():
             'UP': '\x1b\x5b\x41',
             'DOWN': '\x1b\x5b\x42',
             'LEFT': '\x1b\x5b\x44',
-            'RIGHT': '\x1b\x5b\x43'  
-        }
+            'RIGHT': '\x1b\x5b\x43'}
         self.last_key = ''
-        pass
-
+    
     def read(self):
         self.last_key = readchar.readkey()
 
