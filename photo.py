@@ -4,7 +4,6 @@ class Photo():
     def __init__(self, dot, kbd):
         self.d = dot
         self.k = kbd
-        pass
 
     def enter(self):
         self.d.write('READY?')
@@ -20,4 +19,3 @@ class Photo():
         self.d.write('SNAP!')
         sleep(1)
         return True
-    

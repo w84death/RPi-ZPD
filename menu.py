@@ -1,8 +1,8 @@
 class Menu():
     def __init__(self):
         self.items = [
-            'PHOTO ',
-            'TIME L',
+            'PHOTO',
+            'BATCH',
             'CONFIG',
             'INFO'
         ]
@@ -18,9 +18,8 @@ class Menu():
 
     def set_menu_down(self):
         self.active_item += 1
-        if self.active_item > len(self.items):
+        if self.active_item >= len(self.items):
             self.active_item = 0
 
     def is_menu(self, item):
         return self.get_active_menu() == item
-    
