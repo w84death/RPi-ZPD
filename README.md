@@ -3,8 +3,7 @@
 
 The **RPi-ZPD** is a very small device to make photos and 2K timelapse videos.
 
-    ![ZPD](https://i.imgur.com/lGcWSAa.jpg)
-
+![ZPD](https://i.imgur.com/lGcWSAa.jpg)
 
 ## History
 
@@ -14,13 +13,9 @@ I needed just two modes: **single** photo and **timelapse** interval shooting.
 
 I wrote a little python program to handle all of this.
 
-
-
-    ![ZPD](https://i.imgur.com/NcNSaUp.jpg)
-
+![ZPD](https://i.imgur.com/NcNSaUp.jpg)
 
 ## Hardware
-
 
 - Raspberry Pi Zero in Rainbow case
 - Infrared Camera Module 5MP
@@ -30,11 +25,8 @@ I wrote a little python program to handle all of this.
 
 ## Software
 
-
 - Python3
 - readchar
 - microdotphat
 - picamera
-
-
 
