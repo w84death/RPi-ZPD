@@ -9,7 +9,7 @@ class Kbd():
             'HOME': '\x1b\x5b\x48',
             'END': '\x1b\x5b\x46',
             'ENTER': '\x0d',
-            'BACKSPACE': '\x7f',
+            'BACK': '\x7f',
             'EXIT': '*',
 
             'UP': '\x1b\x5b\x41',

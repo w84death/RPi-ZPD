@@ -11,12 +11,16 @@ from dot import Dot
 from kbd import Kbd
 from menu import Menu
 from photo import Photo
+from timelapse import Timelapse
+from info import Info
 
 if __name__ == '__main__':
     d = Dot()
     k = Kbd()
     m = Menu()
     p = Photo(d, k)
+    i = Info(d, k)
+    t = Timelapse(d, k)
 
     # LOGO INTRO
     d.logo()
@@ -38,9 +42,10 @@ if __name__ == '__main__':
         elif k.was('ENTER'):
             if m.is_menu('PHOTO'):
                 p.enter()
+            elif m.is_menu('TIME L'):
+                t.enter()
             elif m.is_menu('INFO'):
-                d.write('P1X/kj')
-                sleep(1)
+                i.enter()
             else:
                 d.write('N/A')
                 sleep(1)
