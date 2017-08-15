@@ -24,7 +24,7 @@ class Timelapse():
         self.d.write('...')
         sleep(1)
         self.photo_id += 1
-        self.c.make_photo('timelapse/{batch}{id}.jpg'.format(
+        self.c.make_photo('timelapse/{batch}-{id}.jpg'.format(
             batch=self.batch_id,
             id=str(self.photo_id)))
         self.d.write('{id} OK'.format(id=self.photo_id))
