@@ -6,7 +6,8 @@ class Photo():
         self.d = dot
         self.k = kbd
         self.c = PiCamera()
-
+        
+        self.c.resolution = (2592, 1944)
         self.c.rotation = 90
         self.c.hflip = True
         self.c.vflip = True
