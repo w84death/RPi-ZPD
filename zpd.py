@@ -4,8 +4,9 @@
 #
 # (c)2017 P1X/kj
 
-VERSION = 'pre-alpha 0.1'
+VERSION = '0.2'
 
+from time import sleep
 from dot import Dot  
 from kbd import Kbd
 

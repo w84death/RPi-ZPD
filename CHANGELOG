@@ -1,0 +1,16 @@
+# CHANGELOG
+
+## ROADMAP
+- 0.4
+    - making timelapse
+- 0.3
+    - camera module
+    - making photo
+- 0.2
+    - simple menu
+
+## RELEASED
+- 0.1
+    - initial classes
+    - can display msg on LCD
+    - can read keys
