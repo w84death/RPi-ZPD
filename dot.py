@@ -10,6 +10,7 @@ class Dot:
     def logo(self):
         dot.write_string('RPiZPD', kerning=False)
         dot.set_decimal(2, 1)
+        dot.show()
         return True
 
     def write(self, msg):
