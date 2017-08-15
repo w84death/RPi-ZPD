@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
         k.read()
         if k.was('EXIT'):
-            q.enter()
+            break
         elif k.was('UP'):
             m.set_menu_up()
         elif k.was('DOWN'):
