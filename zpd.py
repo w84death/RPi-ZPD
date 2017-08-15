@@ -18,4 +18,7 @@ if __name__ == '__main__':
 
     while True:
         key = readchar.readkey()
+        print(key)
+        if key == 'ESC':
+            break
         #d.loop()
