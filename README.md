@@ -21,7 +21,9 @@ I needed just two modes: single photo and timelapse interval shooting.
 ## Software
 
 
-- Python
+- Python3
+- readchar
+- microdotphat
 
 
 
