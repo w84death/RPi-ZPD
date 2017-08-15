@@ -17,7 +17,7 @@ class Kbd():
             'LEFT': '\x1b\x5b\x44',
             'RIGHT': '\x1b\x5b\x43'}
         self.last_key = ''
-    
+
     def read(self):
         self.last_key = readchar.readkey()
 

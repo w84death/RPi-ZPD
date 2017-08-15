@@ -10,17 +10,23 @@ from time import sleep
 from dot import Dot  
 from kbd import Kbd
 from menu import Menu
+from photo import Photo
 
 if __name__ == '__main__':
     d = Dot()
     k = Kbd()
     m = Menu()
+    p = Photo(d, k)
 
+    # LOGO INTRO
     d.logo()
+    sleep(1)
 
+    # MAIN MENU
     while True:
-        k.read()
         d.write(m.get_active_menu())
+
+        k.read()
         if k.was('EXIT'):
             d.write('BYE :)')
             sleep(1)
@@ -29,4 +35,12 @@ if __name__ == '__main__':
             m.set_menu_up()
         elif k.was('DOWN'):
             m.set_menu_down()
-        
+        elif k.was('ENTER'):
+            if m.is_menu('PHOTO'):
+                p.enter()
+            elif m.is_menu('INFO'):
+                d.write('P1X/kj')
+                sleep(1)
+            else:
+                d.write('N/A')
+                sleep(1)

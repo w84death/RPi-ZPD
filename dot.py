@@ -5,7 +5,12 @@ class Dot:
         dot.clear()
         dot.set_rotate180(True)
         dot.fill(1)
-        dot.show()        
+        dot.show()
+
+    def loading(self):
+        dot.clear()
+        dot.fill(1)
+        dot.show()
 
     def logo(self):
         dot.write_string('RPiZPD', kerning=False)

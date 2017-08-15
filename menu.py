@@ -12,11 +12,15 @@ class Menu():
         return self.items[self.active_item]
 
     def set_menu_up(self):
-        self.self.active_item -= 1
+        self.active_item -= 1
         if self.active_item < 0:
             self.active_item = len(self.items) - 1
 
     def set_menu_down(self):
-        self.self.active_item += 1
+        self.active_item += 1
         if self.active_item > len(self.items):
             self.active_item = 0
+
+    def is_menu(self, item):
+        return self.get_active_menu() == item
+    
