@@ -9,7 +9,7 @@ class Photo():
 
         self.c.rotation = 90
         self.c.hflip = True
-        #self.c.vflip = True
+        self.c.vflip = True
 
     def enter(self):
         while True:
