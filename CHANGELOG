@@ -1,15 +1,12 @@
 # CHANGELOG
 
-## ROADMAP
-- 0.4
-    - making timelapse
+## RELEASED
 - 0.3
+    - making timelapse
     - camera module
     - making photo
 - 0.2
     - simple menu
-
-## RELEASED
 - 0.1
     - initial classes
     - can display msg on LCD

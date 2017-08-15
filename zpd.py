@@ -4,7 +4,7 @@
 #
 # (c)2017 P1X/kj
 
-VERSION = '0.2'
+VERSION = '0.3'
 
 from time import sleep
 from dot import Dot  
