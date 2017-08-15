@@ -42,7 +42,7 @@ if __name__ == '__main__':
         elif k.was('ENTER'):
             if m.is_menu('PHOTO'):
                 p.enter()
-            elif m.is_menu('TIME L'):
+            elif m.is_menu('BATCH'):
                 t.enter()
             elif m.is_menu('INFO'):
                 i.enter()
