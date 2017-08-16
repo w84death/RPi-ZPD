@@ -6,7 +6,7 @@ class Timelapse():
         self.k = kbd
         self.c = cam
         self.photo_id = 0
-        self.sleep_time = 3
+        self.sleep_time = 10
         self.batch_id = int(time())
 
     def enter(self):

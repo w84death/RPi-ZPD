@@ -28,7 +28,15 @@ class Photo():
     def take(self):
         self.d.write('...')
         image_id = int(time())
-        self.make_photo('snaps/{id}.jpg'.format(id=str(image_id)))
-        self.d.write('SNAP!')
+        try:
+            self.make_photo('snaps/{id}.jpg'.format(id=str(image_id)))
+            self.d.write('SNAP!')
+        except:
+            for loop in range(4):
+                self.d.write('ERROR_')
+                sleep(0.5)
+                self.d.write('ERROR!')
+                sleep(0.5)
+            return False
         sleep(0.5)
         return True

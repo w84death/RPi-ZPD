@@ -7,6 +7,9 @@ class Menu():
             'INFO',
             'QUIT'
         ]
+
+        self.tree = []
+
         self.active_item = 0
 
     def get_active_menu(self):
