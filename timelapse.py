@@ -27,13 +27,19 @@ class Timelapse():
         self.c.make_photo('timelapse/{batch}-{id}.jpg'.format(
             batch=self.batch_id,
             id=str(self.photo_id)))
-        self.d.write('{id} OK'.format(id=self.photo_id))
+        self.d.write('{} \o/'.format(self.photo_id))
         sleep(1)
         return True
 
     def run(self):
         while True:
             self.take()
-            self.d.write('SLEEP')
-            sleep(self.sleep_time)
+            self.d.write('{} zzz'.format(self.photo_id))
+            sleep(self.sleep_time/4)
+            self.d.write('{} Zzz'.format(self.photo_id))
+            sleep(self.sleep_time/4)
+            self.d.write('{} ZZz'.format(self.photo_id))
+            sleep(self.sleep_time/4)
+            self.d.write('{} ZZZ'.format(self.photo_id))
+            sleep(self.sleep_time/4)
             
