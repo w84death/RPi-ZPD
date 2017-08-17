@@ -2,6 +2,7 @@
 
 For 6 character micro dot phat display.
 
+## Tree
 
 ```
 --[ RPiZPD ]
@@ -31,6 +32,3 @@ For 6 character micro dot phat display.
    '--[ info_ ]
        '--[ P1X/kj]
 ```
-
-btw: this screen is awesome!
-
